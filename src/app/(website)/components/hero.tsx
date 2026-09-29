@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Search, ShoppingBag, Star } from "lucide-react";
-import Button from "./Button";
+import Button from "./ui/Button";
 
 export default function Hero() {
   return (
@@ -77,21 +77,21 @@ export default function Hero() {
           </div>
 
           <div className="absolute left-45 bottom-70 bg-white font-satoshi rounded-xl p-4 shadow-lg flex flex-col">
-            <h4 className="text-base text-left font-normal text-[#242528]">Ui/Ux Designer</h4>
+            <h4 className="text-base text-left font-normal text-brand-dark">Ui/Ux Designer</h4>
             <div className="flex items-center gap-1.5">
-              <span className="text-normal text-xs text-[#82868E]">200 Course</span>
-              <span className="w-1 h-1 bg-[#6B7280] rounded-full"></span>
-              <span className="text-xs text-[#82868E]">1000+ Students</span>
+              <span className="text-normal text-xs text-brand-muted">200 Course</span>
+              <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
+              <span className="text-xs text-brand-muted">1000+ Students</span>
             </div>
           </div>
 
           <div className="absolute left-45 bottom-12 bg-white font-satoshi rounded-2xl p-5 shadow-xl flex flex-col z-50">
             <div className="flex flex-col">
-              <h4 className="text-balance text-left font-satoshi font-medium text-[#242528]">Happy Students</h4>
+              <h4 className="text-balance text-left font-satoshi font-medium text-brand-dark">Happy Students</h4>
               <div className="flex items-center gap-0.5">
-                <span className="text-xs font-medium text-[#242528]">4.5</span>
-                <span className="text-xs text-[#82868E]">(240)</span>
-                <Star className="w-4 h-4 text-[#D1FF33] ml-0.5" fill="currentColor" />
+                <span className="text-xs font-medium text-brand-dark">4.5</span>
+                <span className="text-xs text-brand-muted">(240)</span>
+                <Star className="w-4 h-4 text-accent-alt ml-0.5" fill="currentColor" />
               </div>
             </div>
 
@@ -108,7 +108,7 @@ export default function Hero() {
                 />
               ))}
               <div
-                className="w-10.75 h-10.75 rounded-full border-[2.5px] border-white bg-[#D1FF33] flex items-center justify-center relative text-sm font-bold text-[#242528] z-50"
+                className="w-10.75 h-10.75 rounded-full border-[2.5px] border-white bg-accent-alt flex items-center justify-center relative text-sm font-bold text-brand-dark z-50"
               >
                 2K+
               </div>
@@ -116,9 +116,9 @@ export default function Hero() {
           </div>
 
           <div className="absolute right-55 bottom-60 bg-white font-satoshi rounded-xl p-4 shadow-lg flex flex-col">
-            <h4 className="text-sm text-left font-medium font-satoshi text-[#242528]">Learning Process</h4>
-            <h2 className="font-poppins text-left text-[48px] font-semibold text-[#242528]">55%</h2>
-            <div className="w-50 h-2 bg-[#E5E7EB] rounded-full overflow-hidden">
+            <h4 className="text-sm text-left font-medium font-satoshi text-brand-dark">Learning Process</h4>
+            <h2 className="font-poppins text-left text-[48px] font-semibold text-brand-dark">55%</h2>
+            <div className="w-50 h-2 bg-gray-200 rounded-full overflow-hidden">
               <div className="h-full bg-accent rounded-full w-[55%]"></div>
             </div>
           </div>
