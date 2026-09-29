@@ -1,4 +1,5 @@
 import Button from "./ui/Button"
+import CourseCard from "./CourseCard"
 
 export default function Skills() {
     const skills = [
@@ -76,6 +77,88 @@ export default function Skills() {
         },
 
     ]
+    
+    const courses = [
+        {
+            id: 1,
+            image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
+            title: "Learn Figma from Basic",
+            author: "purepearl studio",
+            rating: 4.5,
+            lessons: 17,
+            duration: "2 hours 16 mins",
+            comments: 59,
+            level: "Beginner",
+            price: 25,
+            studentsText: "26+"
+        },
+        {
+            id: 2,
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+            title: "Build Digital Asset",
+            author: "purepearl studio",
+            rating: 4.5,
+            lessons: 17,
+            duration: "2 hours 16 mins",
+            comments: 59,
+            level: "Beginner",
+            price: 25,
+            studentsText: "26+"
+        },
+        {
+            id: 3,
+            image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800",
+            title: "The Power of Big Data",
+            author: "purepearl studio",
+            rating: 4.5,
+            lessons: 17,
+            duration: "2 hours 16 mins",
+            comments: 59,
+            level: "Beginner",
+            price: 25,
+            studentsText: "26+"
+        },
+        {
+            id: 4,
+            image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800",
+            title: "Balancing Productivity and...",
+            author: "purepearl studio",
+            rating: 4.5,
+            lessons: 17,
+            duration: "2 hours 16 mins",
+            comments: 59,
+            level: "Beginner",
+            price: 25,
+            studentsText: "26+"
+        },
+        {
+            id: 5,
+            image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800",
+            title: "Mastering Money Manage...",
+            author: "purepearl studio",
+            rating: 4.5,
+            lessons: 17,
+            duration: "2 hours 16 mins",
+            comments: 59,
+            level: "Beginner",
+            price: 25,
+            studentsText: "26+"
+        },
+        {
+            id: 6,
+            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
+            title: "From Idea to Startup Succ...",
+            author: "purepearl studio",
+            rating: 4.5,
+            lessons: 17,
+            duration: "2 hours 16 mins",
+            comments: 59,
+            level: "Beginner",
+            price: 25,
+            studentsText: "26+"
+        }
+    ];
+
     return (
         <section className="bg-white py-18">
             <section>
@@ -117,7 +200,12 @@ export default function Skills() {
                 </div>
             </section>
 
-               <section>
+               <section className="max-w-299.75 mx-auto mt-16 px-4">
+                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                       {courses.map((course) => (
+                           <CourseCard key={course.id} {...course} />
+                       ))}
+                   </div>
                 </section>  
 
         </section>
