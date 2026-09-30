@@ -27,7 +27,7 @@ export default function CourseCard({
   studentsText,
 }: CourseCardProps) {
   return (
-    <div className="border border-gray-200 max-w-93.25 w-full rounded-[28px] p-4 bg-#CED0D3 flex flex-col font-satoshi">
+    <div className="border border-gray-200 max-w-93.25 w-full rounded-3xl p-4 bg-#CED0D3 flex flex-col font-satoshi">
       {/* Image Container */}
       <div className="relative w-full aspect-4/2.5 rounded-2xl overflow-hidden mb-5">
         <Image src={image} alt={title} fill className="object-cover" />
@@ -71,25 +71,28 @@ export default function CourseCard({
 
           {/* Avatars */}
           <div className="flex -space-x-2">
-            <div className="w-7 h-7 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
+            <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
               <Image src="https://i.pravatar.cc/100?img=11" alt="student" fill className="object-cover" />
             </div>
-            <div className="w-7 h-7 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
+            <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
               <Image src="https://i.pravatar.cc/100?img=12" alt="student" fill className="object-cover" />
             </div>
-            <div className="w-7 h-7 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
+            <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
               <Image src="https://i.pravatar.cc/100?img=13" alt="student" fill className="object-cover" />
             </div>
-            <div className="w-7 h-7 rounded-full border-2 border-white bg-accent text-black flex items-center justify-center text-[10px] font-bold z-10">
+            <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
+              <Image src="https://i.pravatar.cc/100?img=16" alt="student" fill className="object-cover" />
+            </div>
+            <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-accent text-black flex items-center justify-center text-xs z-10">
               {studentsText}
             </div>
           </div>
         </div>
 
         {/* Footer / Price */}
-        <div className="mt-auto">
+        <div className="mt-auto font-satoshi">
           <span className="text-primary font-bold text-xl">${price}</span>
-          <span className="text-[##4F4F4F] text-xs font-reg">/lifetime</span>
+          <span className="text-[#4F4F4F] text-xs font-regular">/lifetime</span>
         </div>
       </div>
     </div>
