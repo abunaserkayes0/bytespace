@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Search, ShoppingBag, Star } from "lucide-react";
 import Button from "./ui/Button";
+import ProgressCard from "./ProgressCard";
 
 export default function Hero() {
   return (
@@ -115,13 +116,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute right-55 bottom-60 bg-white font-satoshi rounded-xl p-4 shadow-lg flex flex-col">
-            <h4 className="text-sm text-left font-medium font-satoshi text-brand-dark">Learning Process</h4>
-            <h2 className="font-poppins text-left text-[48px] font-semibold text-brand-dark">55%</h2>
-            <div className="w-50 h-2 bg-gray-200 rounded-full overflow-hidden">
-              <div className="h-full bg-accent rounded-full w-[55%]"></div>
-            </div>
-          </div>
+          <ProgressCard className="absolute right-55 bottom-60" />
 
         </section>
 

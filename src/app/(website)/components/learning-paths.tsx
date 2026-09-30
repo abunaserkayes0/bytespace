@@ -52,7 +52,7 @@ export default function LearningPaths() {
                             key={path.id}
                             className="max-w-41.75 max-h-41.75 py-8.75 flex flex-col items-center justify-center border border-[#EAEAEC] rounded-3xl hover:shadow-sm transition-all duration-300 cursor-pointer"
                         >
-                            <div className="w-15 h-15 bg-accent rounded-full flex items-center justify-center mb-3">
+                            <div className="size-15 bg-accent rounded-full flex items-center justify-center shrink-0 mb-3">
                                 <path.icon className="text-brand-black size-6.75" />
                             </div>
                             <span className="font-satoshi font-medium text-xl text-[#242558] text-center">
