@@ -1,5 +1,5 @@
-import Button from "./ui/Button"
-import CourseCard from "./CourseCard"
+import Button from "./ui/button"
+import CourseCard from "./course-card"
 
 export default function Skills() {
     const skills = [

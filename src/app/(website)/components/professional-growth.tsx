@@ -1,6 +1,6 @@
 import Image from "next/image"
-import CourseCard from "./CourseCard"
-import ProgressCard from "./ProgressCard"
+import CourseCard from "./course-card"
+import ProgressCard from "./progress-card"
 
 export default function ProfessionalGrowth() {
     const growth = [{
