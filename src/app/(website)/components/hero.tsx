@@ -11,7 +11,7 @@ export default function Hero() {
       <nav className="flex justify-between items-center px-8 py-8 mb-12.25 text-white z-20 relative">
         <div className="flex items-center text-[22px] font-bold gap-2">
           <Image
-            src="/icons/Header_Logo.png"
+            src="/icons/logo.png"
             alt="ByteSpace Logo"
             width={171}
             height={37}

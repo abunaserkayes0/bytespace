@@ -23,6 +23,7 @@ export default function ManageCourses() {
             <div className="max-w-314.5 mx-auto">
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-x-15.75 pt-30 pb-18">
                     <aside className="relative z-10">
+                        {/* Total Revenue card */}
                         <div
                             className={`bg-primary max-w-58 font-satoshi rounded-xl p-4 shadow-lg flex flex-col mb-7.75 relative`}
                         >
@@ -37,6 +38,8 @@ export default function ManageCourses() {
                                 <div className="h-full bg-accent rounded-full" />
                             </div>
                         </div>
+
+                        {/* Year to Date card */}
                          <div
                             className={`bg-primary max-w-33.5 font-satoshi rounded-xl p-4 shadow-lg flex flex-col`}
                         >
@@ -44,7 +47,7 @@ export default function ManageCourses() {
                                 Year to Date
                             </h4>
                             <span className="text-[10px]">2023</span>
-                            <h2 className="font-poppins text-white text-left text-[24px] leading-8 font-semibold">
+                            <h2 className="font-poppins text-white text-left text-[24px] leading-8 font-semibold my-2">
                                 $1200.38
                             </h2>
                             <div className="max-w-9.5 h-5 bg-accent rounded-full flex items-center justify-center">
@@ -54,8 +57,8 @@ export default function ManageCourses() {
                         <div className="absolute -top-10 left-15">
                             <Image src="/icons/image.png" width="435" height="596" alt="certificate image" />
                         </div>
-                        <div>
-                            <Image src="/icons/straight-role.png" width="215" height="215" alt="certificate image" />
+                        <div className="absolute -top-2.5 left-67 rotate-40">
+                            <Image src="/icons/straight-role.png" width="216" height="216" alt="certificate image" />
                         </div>
 
                         
