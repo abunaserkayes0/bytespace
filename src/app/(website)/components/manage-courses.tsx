@@ -1,6 +1,4 @@
 import Image from "next/image"
-import CourseCard from "./course-card"
-import ProgressCard from "./progress-card"
 import { CircleCheck } from "lucide-react"
 import HappyStudentsCard from "./happy-students-card"
 
@@ -40,7 +38,7 @@ export default function ManageCourses() {
                         </div>
 
                         {/* Year to Date card */}
-                         <div
+                        <div
                             className={`bg-primary max-w-33.5 font-satoshi rounded-xl p-4 shadow-lg flex flex-col`}
                         >
                             <h4 className="text-base text-left font-medium font-satoshi text-white">
@@ -60,15 +58,12 @@ export default function ManageCourses() {
                         <div className="absolute -top-2.5 left-67 rotate-40">
                             <Image src="/icons/straight-role.png" width="216" height="216" alt="certificate image" />
                         </div>
-
-                        
-
-                       
-
-                        <HappyStudentsCard/>
+                        <div className="absolute left-67 bottom-10">
+                            <HappyStudentsCard />
+                        </div>
                     </aside>
                     <aside>
-                        <h2 className="font-poppins text-[44px] text-brand-dark font-semibold leading-[120%] tracking-[-1%] mb-10">Create & Manage Courses Easily.</h2>
+                        <h2 className="font-poppins text-[44px] text-brand-dark font-semibold leading-[120%] tracking-[-1%] mb-10">Create & Manage <br /> Courses Easily.</h2>
                         <p className="font-satoshi text-lg text-[#4B4C53] font-normal leading-[180%] text-brand-gray my-8">
                             <b>ByteSpace</b> supports individuals or entities in the creation, publication, and administration of educational courses.
                         </p>
