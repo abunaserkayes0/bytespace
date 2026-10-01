@@ -89,7 +89,6 @@ export default function Features() {
                     rating={4.9}
                     price={49.99}
                   />
-
                 </div>
 
                 {/* Decorative Image Behind Card */}
