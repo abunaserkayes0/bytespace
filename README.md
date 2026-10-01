@@ -62,7 +62,9 @@ bytespace/
 Follow these step-by-step instructions to get the project up and running on your local machine:
 
 ### 1. Prerequisites
+
 Make sure you have the following installed:
+
 - **Node.js**: `v18.18.0` or higher ([Download Node.js](https://nodejs.org/))
 - **Package Manager**: [pnpm](https://pnpm.io/) (recommended), `npm`, or `yarn`
   ```bash
@@ -70,36 +72,48 @@ Make sure you have the following installed:
   ```
 
 ### 2. Clone the Repository
+
 Clone the project to your local directory:
+
 ```bash
 git clone https://github.com/abunaserkayes0/bytespace.git
 cd bytespace
 ```
 
 ### 3. Install Dependencies
+
 Install all required project dependencies:
+
 ```bash
 pnpm install
 ```
-*(Alternatively, you can run `npm install` or `yarn install`)*
+
+_(Alternatively, you can run `npm install` or `yarn install`)_
 
 ### 4. Start the Local Development Server
+
 Start the Next.js development server powered by Turbopack:
+
 ```bash
 pnpm dev
 ```
-*(Or `npm run dev` / `yarn dev`)*
+
+_(Or `npm run dev` / `yarn dev`)_
 
 ### 5. Open in Your Browser
+
 Once the dev server is active, open your browser and visit:
+
 ```text
 http://localhost:3000
 ```
+
 The application will hot-reload automatically as you edit files in `src/app`.
 
 ---
 
 ### 📦 (Optional) Running the Production Build Locally
+
 To test the compiled, optimized production bundle on your local machine:
 
 ```bash
@@ -109,18 +123,19 @@ pnpm build
 # 2. Start the local production server
 pnpm start
 ```
+
 Then navigate to [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## 📜 Available Scripts
 
-| Command | Description |
-|---|---|
-| `pnpm dev` | Starts the development server with Turbopack |
-| `pnpm build` | Creates an optimized production build |
-| `pnpm start` | Runs the built production application |
-| `pnpm lint` | Runs ESLint to check for code issues |
+| Command       | Description                                    |
+| ------------- | ---------------------------------------------- |
+| `pnpm dev`    | Starts the development server with Turbopack   |
+| `pnpm build`  | Creates an optimized production build          |
+| `pnpm start`  | Runs the built production application          |
+| `pnpm lint`   | Runs ESLint to check for code issues           |
 | `pnpm format` | Formats code with Prettier and runs ESLint fix |
 
 ---
