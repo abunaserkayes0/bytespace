@@ -158,7 +158,7 @@ export default function Features() {
                 </div>
 
                 {/* Backdrop Certificate Image */}
-                <div className="hidden sm:block absolute top-0 right-0 sm:left-28 lg:left-24 z-10 w-64 sm:w-80 lg:w-96 pointer-events-none">
+                <div className="sm:block absolute top-0 right-0 sm:left-28 lg:left-24 z-10 w-64 sm:w-80 lg:w-96 pointer-events-none">
                   <Image
                     src="/images/image.png"
                     width={435}
