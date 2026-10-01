@@ -38,8 +38,8 @@ export default function Features() {
             <div className="max-w-314.5 mx-auto">
                 <section className="flex flex-col gap-y-30 pt-30 pb-18">
                     {/* Professional Growth Section */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-15.75">
-                        <aside className="flex flex-col justify-center">
+                    <section className="grid grid-cols-1 md:grid-cols-2 gap-x-15.75">
+                        <aside className="flex flex-col justify-center py-18.5">
                             <h2 className="font-poppins text-[44px] text-brand-dark font-semibold leading-[120%] tracking-[-1%] mb-8">Your Path to Professional Growth Starts Here!</h2>
                             <p className="font-satoshi text-lg text-[#4B4C53] font-normal leading-[180%] text-brand-gray mb-8">
                                 Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
@@ -78,14 +78,14 @@ export default function Features() {
                                 <Image src="/icons/straight-role.png" width="215" height="215" alt="left role" />
                             </div>
                         </aside>
-                    </div>
+                    </section>
 
                     {/* Manage Courses Section */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-15.75">
-                        <aside className="relative z-10">
+                    <section className="grid grid-cols-1 md:grid-cols-2 gap-x-15.75">
+                        <aside className="relative max-w-135.25 z-10 min-h-150">
                             {/* Total Revenue card */}
                             <div
-                                className={`bg-primary max-w-58 font-satoshi rounded-xl p-4 shadow-lg flex flex-col mb-7.75 relative`}
+                                className={`bg-primary max-w-58 font-satoshi rounded-xl p-4 shadow-lg flex flex-col mb-7.75 relative z-0`}
                             >
                                 <h4 className="text-base text-left font-medium font-satoshi text-white">
                                     Total Revenue
@@ -101,7 +101,7 @@ export default function Features() {
 
                             {/* Year to Date card */}
                             <div
-                                className={`bg-primary max-w-33.5 font-satoshi rounded-xl p-4 shadow-lg flex flex-col`}
+                                className={`bg-primary max-w-33.5 font-satoshi rounded-xl p-4 shadow-lg flex flex-col z-0 relative`}
                             >
                                 <h4 className="text-base text-left font-medium font-satoshi text-white">
                                     Year to Date
@@ -114,13 +114,13 @@ export default function Features() {
                                     <span className="text-black text-[10px] leading-5 font-medium">+12$</span>
                                 </div>
                             </div>
-                            <div className="absolute -top-10 left-15">
+                            <div className="absolute -top-10 left-15 z-0">
                                 <Image src="/icons/image.png" width="435" height="596" alt="certificate image" />
                             </div>
-                            <div className="absolute -top-2.5 left-67 rotate-40">
+                            <div className="absolute -top-2.5 left-67 rotate-40 z-0">
                                 <Image src="/icons/straight-role.png" width="216" height="216" alt="certificate image" />
                             </div>
-                            <div className="absolute left-67 bottom-10">
+                            <div className="absolute left-1/2 top-60 z-20">
                                 <HappyStudentsCard />
                             </div>
                         </aside>
@@ -140,7 +140,7 @@ export default function Features() {
                                 }
                             </div>
                         </aside>
-                    </div>
+                    </section>
                 </section>
             </div>
         </div>
