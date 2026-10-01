@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Search, ShoppingBag, Star } from "lucide-react";
-import Button from "./ui/button";
 import ProgressCard from "./progress-card";
 import HappyStudentsCard from "./happy-students-card";
+import Button from "./ui/button";
 
 export default function Hero() {
   return (
