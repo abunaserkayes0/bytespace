@@ -2,6 +2,8 @@
 
 **ByteSpace** is a modern, responsive e-learning and course discovery landing page built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, and **TypeScript**.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/abunaserkayes0/bytespace)
+
 ---
 
 ## ✨ Features
@@ -137,6 +139,37 @@ Then navigate to [http://localhost:3000](http://localhost:3000).
 | `pnpm start`  | Runs the built production application          |
 | `pnpm lint`   | Runs ESLint to check for code issues           |
 | `pnpm format` | Formats code with Prettier and runs ESLint fix |
+
+---
+
+## 🌐 Deployment
+
+### Deploy with Vercel (Recommended)
+
+The easiest way to deploy this Next.js app to production is with [Vercel](https://vercel.com):
+
+#### Method 1: Git Integration (Continuous Deployment)
+
+1. Push your latest code to GitHub:
+   ```bash
+   git push origin main
+   ```
+2. Navigate to [vercel.com/new](https://vercel.com/new) and log in with your GitHub account.
+3. Import the **`bytespace`** repository.
+4. Framework and build settings will be auto-detected (`Next.js`, `pnpm build`).
+5. Click **Deploy**. Vercel will build the application and provide you with a live production URL. Every subsequent `git push` will trigger an automatic deployment!
+
+#### Method 2: Deploy via Vercel CLI
+
+You can also deploy directly from your terminal:
+
+```bash
+# 1. Log in to Vercel
+npx vercel login
+
+# 2. Deploy to production
+npx vercel --prod
+```
 
 ---
 
