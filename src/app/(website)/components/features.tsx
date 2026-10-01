@@ -76,7 +76,7 @@ export default function Features() {
             <aside className="relative z-10 flex justify-center w-full">
               <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-md xl:max-w-lg">
                 {/* Main Course Card */}
-                <div className="relative z-30 w-full">
+                <div className="relative w-full">
                   <CourseCard
                     image="https://i.pravatar.cc/500?img=10"
                     title="Web Development"
@@ -89,10 +89,11 @@ export default function Features() {
                     rating={4.9}
                     price={49.99}
                   />
+
                 </div>
 
                 {/* Decorative Image Behind Card */}
-                <div className="hidden sm:block absolute top-8 -right-6 lg:right-[-20%] z-10 w-72 lg:w-144.25 pointer-events-none opacity-85">
+                <div className="hidden sm:block absolute top-15 -right-6 lg:right-[-40%] z-10 w-72 lg:w-144.25 pointer-events-none opacity-85">
                   <Image
                     src="/images/Image.png"
                     width={577}
@@ -103,12 +104,12 @@ export default function Features() {
                 </div>
 
                 {/* Floating ProgressCard */}
-                <div className="hidden sm:block absolute top-[35%] sm:-right-6 z-40 scale-85 sm:scale-95 lg:scale-100 origin-bottom-right shadow-2xl">
+                <div className="hidden sm:block absolute top-[40%] sm:-right-25 z-20 scale-85 sm:scale-95 lg:scale-100 origin-bottom-right shadow-2xl">
                   <ProgressCard />
                 </div>
 
                 {/* Floating Role Shape */}
-                <div className="hidden lg:block absolute top-20 right-[-12%] z-40 w-32 pointer-events-none select-none">
+                <div className="hidden lg:block absolute top-25 right-[-27%] z-30 w-32 pointer-events-none select-none">
                   <Image
                     src="/icons/straight-role.png"
                     width={215}
@@ -127,7 +128,7 @@ export default function Features() {
             <aside className="relative z-10 flex justify-center w-full order-2 lg:order-1">
               <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-md xl:max-w-lg min-h-[380px] sm:min-h-[460px] flex flex-col justify-start pt-4 sm:pt-8">
                 {/* Total Revenue card */}
-                <div className="bg-primary max-w-[240px] sm:max-w-64 font-satoshi rounded-2xl p-4 sm:p-5 shadow-xl flex flex-col mb-4 sm:mb-6 relative z-20">
+                <div className="bg-primary max-w-[240px] sm:max-w-64 font-satoshi rounded-2xl p-4 sm:p-5 shadow-xl flex flex-col mb-4 sm:mb-6 relative">
                   <h4 className="text-sm sm:text-base text-left font-medium text-white">
                     Total Revenue
                   </h4>
@@ -141,7 +142,7 @@ export default function Features() {
                 </div>
 
                 {/* Year to Date card */}
-                <div className="bg-primary max-w-[170px] sm:max-w-44 font-satoshi rounded-2xl p-4 shadow-xl flex flex-col z-20 relative">
+                <div className="bg-primary max-w-[170px] sm:max-w-44 font-satoshi rounded-2xl p-4 shadow-xl flex flex-col relative">
                   <h4 className="text-xs sm:text-sm text-left font-medium text-white">
                     Year to Date
                   </h4>
@@ -168,7 +169,7 @@ export default function Features() {
                 </div>
 
                 {/* Decorative cylinder shape */}
-                <div className="hidden lg:block absolute -top-4 right-4 rotate-40 z-10 w-36 pointer-events-none select-none">
+                <div className="hidden lg:block absolute right-15 top-[20%] rotate-40 z-10 w-36 pointer-events-none select-none">
                   <Image
                     src="/icons/straight-role.png"
                     width={216}
