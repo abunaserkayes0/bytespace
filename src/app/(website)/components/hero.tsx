@@ -132,7 +132,7 @@ export default function Hero() {
         </p>
 
         {/* Search Bar */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-[85vw] md:w-[70vw] lg:w-[50vw] items-stretch sm:items-center mb-10 sm:mb-16 relative z-30 px-2 sm:px-0">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-[85vw] md:w-[70vw] lg:w-full lg:max-w-[581px] items-stretch sm:items-center mb-10 sm:mb-16 relative z-30 px-2 sm:px-0">
           <div className="flex bg-white rounded-full py-2.5 sm:py-[11.5px] px-4 flex-1 items-center shadow-lg">
             <Search className="text-gray-400 mr-2 sm:mr-3 shrink-0 size-5 sm:size-6" />
             <input
