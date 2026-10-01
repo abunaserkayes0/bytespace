@@ -1,0 +1,148 @@
+import Image from "next/image"
+import { CircleCheck } from "lucide-react"
+import CourseCard from "./course-card"
+import ProgressCard from "./progress-card"
+import HappyStudentsCard from "./happy-students-card"
+
+export default function Features() {
+    const growth = [{
+        id: 1,
+        title: "students",
+        value: "12K"
+    }, {
+        id: 2,
+        title: "courses",
+        value: "70+"
+    }, {
+        id: 3,
+        title: "creators",
+        value: "16"
+    }]
+
+    const policies = [{
+        id: 1,
+        title: "Share Your Expertise",
+    }, {
+        id: 2,
+        title: "Monetize Your Passion",
+    }, {
+        id: 3,
+        title: "Flexibility and Autonomy",
+    }, {
+        id: 4,
+        title: "Build a Community",
+    }]
+
+    return (
+        <div className="bg-features-radial">
+            <div className="max-w-314.5 mx-auto">
+                <section className="flex flex-col gap-y-30 pt-30 pb-18">
+                    {/* Professional Growth Section */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-15.75">
+                        <aside className="flex flex-col justify-center">
+                            <h2 className="font-poppins text-[44px] text-brand-dark font-semibold leading-[120%] tracking-[-1%] mb-8">Your Path to Professional Growth Starts Here!</h2>
+                            <p className="font-satoshi text-lg text-[#4B4C53] font-normal leading-[180%] text-brand-gray mb-8">
+                                Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
+                            </p>
+                            <div className="flex gap-x-14">
+                                {
+                                    growth.map(item => (
+                                        <div key={item.id}>
+                                            <h4 className="font-poppins text-[#003BE2] font-medium text-[36px] leading-11 tracking-[-1%]">{item.value}</h4>
+                                            <p className="font-satoshi font-normal text-[#4B4C53] text-lg leading-[120%]">{item.title}</p>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </aside>
+                        <aside className="relative z-10">
+                            <CourseCard
+                                image="https://i.pravatar.cc/100?img=10"
+                                title="Web Development"
+                                author="Abunaser Kayes"
+                                lessons={12}
+                                duration="12h 30m"
+                                comments={12}
+                                level="All Levels"
+                                studentsText="12K"
+                                rating={4.9}
+                                price={49.99}
+                            />
+                            <div className="absolute top-17 z-10">
+                                <Image src="/icons/Image.png" width="577" height="540" alt="certificate image" />
+                            </div>
+                            <div className="absolute bottom-15 right-17 z-20">
+                                <ProgressCard />
+                            </div>
+                            <div className="absolute top-18 right-5 z-30">
+                                <Image src="/icons/straight-role.png" width="215" height="215" alt="left role" />
+                            </div>
+                        </aside>
+                    </div>
+
+                    {/* Manage Courses Section */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-15.75">
+                        <aside className="relative z-10">
+                            {/* Total Revenue card */}
+                            <div
+                                className={`bg-primary max-w-58 font-satoshi rounded-xl p-4 shadow-lg flex flex-col mb-7.75 relative`}
+                            >
+                                <h4 className="text-base text-left font-medium font-satoshi text-white">
+                                    Total Revenue
+                                </h4>
+                                <span className="text-[10px]">July 1-28</span>
+                                <h2 className="font-poppins text-white text-left text-[24px] leading-8 font-semibold">
+                                    $120.29
+                                </h2>
+                                <div className="w-50 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div className="h-full bg-accent rounded-full" />
+                                </div>
+                            </div>
+
+                            {/* Year to Date card */}
+                            <div
+                                className={`bg-primary max-w-33.5 font-satoshi rounded-xl p-4 shadow-lg flex flex-col`}
+                            >
+                                <h4 className="text-base text-left font-medium font-satoshi text-white">
+                                    Year to Date
+                                </h4>
+                                <span className="text-[10px]">2023</span>
+                                <h2 className="font-poppins text-white text-left text-[24px] leading-8 font-semibold my-2">
+                                    $1200.38
+                                </h2>
+                                <div className="max-w-9.5 h-5 bg-accent rounded-full flex items-center justify-center">
+                                    <span className="text-black text-[10px] leading-5 font-medium">+12$</span>
+                                </div>
+                            </div>
+                            <div className="absolute -top-10 left-15">
+                                <Image src="/icons/image.png" width="435" height="596" alt="certificate image" />
+                            </div>
+                            <div className="absolute -top-2.5 left-67 rotate-40">
+                                <Image src="/icons/straight-role.png" width="216" height="216" alt="certificate image" />
+                            </div>
+                            <div className="absolute left-67 bottom-10">
+                                <HappyStudentsCard />
+                            </div>
+                        </aside>
+                        <aside>
+                            <h2 className="font-poppins text-[44px] text-brand-dark font-semibold leading-[120%] tracking-[-1%] mb-10">Create & Manage <br /> Courses Easily.</h2>
+                            <p className="font-satoshi text-lg text-[#4B4C53] font-normal leading-[180%] text-brand-gray my-8">
+                                <b>ByteSpace</b> supports individuals or entities in the creation, publication, and administration of educational courses.
+                            </p>
+                            <div>
+                                {
+                                    policies.map(item => (
+                                        <div className="flex gap-x-2 items-center mb-4" key={item.id}>
+                                            <CircleCheck fill="#0e44fd" stroke="white" />
+                                            <h5 className="font-satoshi text-base text-[#232529] font-medium leading-[120%] tracking-normal">{item.title}</h5>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </div>
+    )
+}
