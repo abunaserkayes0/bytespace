@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Search, ShoppingBag, Star } from "lucide-react";
+import { Search, ShoppingBag } from "lucide-react";
 import ProgressCard from "./progress-card";
 import HappyStudentsCard from "./happy-students-card";
 import Button from "./ui/button";
@@ -9,13 +9,15 @@ export default function Hero() {
     <div className="bg-primary bg-grid overflow-hidden flex flex-col font-poppins relative">
       {/* Navigation */}
       <nav className="flex justify-between items-center px-8 py-8 mb-12.25 text-white z-20 relative">
-        <div className="flex items-center text-[22px] font-bold gap-2">
+        <div className="flex items-end text-[22px] font-bold gap-2">
           <Image
             src="/icons/logo.png"
             alt="ByteSpace Logo"
-            width={171}
-            height={37}
+            width={28}
+            height={31}
+            className="mb-2"
           />
+          <span className="font-clash-display text-[24px]">ByteSpace</span>
         </div>
 
         <div className="hidden md:flex gap-10 text-base font-normal text-white/90">

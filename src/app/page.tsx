@@ -4,6 +4,8 @@ import Skills from "./(website)/components/skills";
 import LearningPaths from "./(website)/components/learning-paths";
 import Features from "./(website)/components/features";
 import CreatorCta from "./(website)/components/creator-cta";
+import Testimonials from "./(website)/components/testimonials";
+import Footer from "./(website)/components/footer";
 
 export default function Page() {
     return (
@@ -14,6 +16,8 @@ export default function Page() {
             <LearningPaths />
             <Features />
             <CreatorCta />
+            <Testimonials />
+            <Footer />
         </div>
     )
 }

@@ -10,6 +10,7 @@
   --color-brand-light: #f5f5f6;
   --font-poppins: var(--font-poppins), sans-serif;
   --font-satoshi: 'Satoshi', sans-serif;
+  --font-clash-display: var(--font-clash-display), sans-serif;
 }
 
 :root {
@@ -54,4 +55,13 @@ body {
     /* Top Left */
     radial-gradient(circle 600px at 30% 0%, #cbfc0166 5%, #cbfc0117 50%, #cbfc0106 75%, #cbfc0100 100%);
   backdrop-filter: blur(40px);
+}
+
+.bg-testimonial-radial {
+  background-color: white;
+  background-image:
+    radial-gradient(circle 260px at 50% 20%, rgba(203, 252, 1, 0.6) 0%, rgba(203, 252, 1, 0.138) 50%, rgba(203, 252, 1, 0.036) 75%, rgba(203, 252, 1, 0) 100%),
+    radial-gradient(circle 800px at 0% 100%, rgba(0, 59, 226, 0.24) 0%, rgba(0, 59, 226, 0.0552) 65%, rgba(0, 59, 226, 0.0144) 75%, rgba(0, 59, 226, 0) 100%),
+    radial-gradient(circle 250px at 100% 50%, rgba(203, 252, 1, 0.4) 0%, rgba(203, 252, 1, 0.092) 53%, rgba(203, 252, 1, 0.024) 75%, rgba(203, 252, 1, 0) 100%);
+
 }
