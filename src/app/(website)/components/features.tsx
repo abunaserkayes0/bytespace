@@ -74,7 +74,7 @@ export default function Features() {
                             <div className="absolute bottom-15 right-17 z-20">
                                 <ProgressCard />
                             </div>
-                            <div className="absolute top-18 right-5 z-30">
+                            <div className="absolute top-45 right-5 z-30">
                                 <Image src="/icons/straight-role.png" width="215" height="215" alt="left role" />
                             </div>
                         </aside>
