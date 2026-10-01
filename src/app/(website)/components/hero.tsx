@@ -11,9 +11,9 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-primary bg-grid overflow-hidden flex flex-col font-poppins relative w-full">
+    <div className="bg-primary bg-grid overflow-hidden flex flex-col font-poppins relative w-full min-h-screen lg:h-screen lg:max-h-screen">
       {/* Navigation */}
-      <nav className="w-full flex justify-between items-center px-4 sm:px-8 py-5 sm:py-7 text-white z-40 relative">
+      <nav className="w-full flex justify-between items-center px-4 sm:px-8 py-4 sm:py-5 lg:py-6 text-white z-40 relative shrink-0 mb-12.5">
         <div className="flex items-center text-[22px] font-bold gap-2">
           <Image
             src="/icons/logo.png"
@@ -121,29 +121,31 @@ export default function Hero() {
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col items-center text-center px-4 sm:px-6 text-white z-20 relative w-full pt-4 sm:pt-8">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[72px] font-satoshi font-semibold leading-[115%] sm:leading-[120%] mb-4 sm:mb-6 tracking-[-1%]">
-          Get Access to Hundreds <br className="hidden sm:block" /> Courses
-          Available
-        </h1>
-        <p className="text-sm sm:text-base md:text-lg text-white/80 mb-8 sm:mb-12 leading-relaxed font-light px-2">
-          Unlock your creativity, gain valuable knowledge, and grow your
-          business with our wide range of courses.
-        </p>
+      <main className="flex-1 flex flex-col items-center justify-between text-center px-4 sm:px-6 text-white z-20 relative w-full pt-2 sm:pt-4 lg:pt-2 pb-0 min-h-0">
+        <div className="flex flex-col items-center w-full max-w-4xl mx-auto shrink-0">
+          <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-[60px] xl:text-[68px] font-satoshi font-semibold leading-[115%] sm:leading-[118%] mb-3 sm:mb-4 tracking-[-1%]">
+            Get Access to Hundreds <br className="hidden sm:block" /> Courses
+            Available
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg text-white/80 mb-5 sm:mb-8 leading-relaxed font-light px-2 max-w-2xl">
+            Unlock your creativity, gain valuable knowledge, and grow your
+            business with our wide range of courses.
+          </p>
 
-        {/* Search Bar */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-[85vw] md:w-[70vw] lg:w-full lg:max-w-[581px] items-stretch sm:items-center mb-10 sm:mb-16 relative z-30 px-2 sm:px-0">
-          <div className="flex bg-white rounded-full py-2.5 sm:py-[11.5px] px-4 flex-1 items-center shadow-lg">
-            <Search className="text-gray-400 mr-2 sm:mr-3 shrink-0 size-5 sm:size-6" />
-            <input
-              type="text"
-              placeholder="Course, topic, creator"
-              className="border-none outline-none flex-1 text-sm sm:text-base md:text-lg text-gray-800 placeholder-gray-400 w-full font-normal font-satoshi bg-transparent min-w-0"
-            />
+          {/* Search Bar */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-[85vw] md:w-[70vw] lg:w-full lg:max-w-[581px] items-stretch sm:items-center mb-4 sm:mb-6 lg:mb-4 relative z-30 px-2 sm:px-0">
+            <div className="flex bg-white rounded-full py-2.5 sm:py-[11.5px] px-4 flex-1 items-center shadow-lg">
+              <Search className="text-gray-400 mr-2 sm:mr-3 shrink-0 size-5 sm:size-6" />
+              <input
+                type="text"
+                placeholder="Course, topic, creator"
+                className="border-none outline-none flex-1 text-sm sm:text-base md:text-lg text-gray-800 placeholder-gray-400 w-full font-normal font-satoshi bg-transparent min-w-0"
+              />
+            </div>
+            <Button className="w-full sm:w-auto shrink-0 justify-center">
+              Search
+            </Button>
           </div>
-          <Button className="w-full sm:w-auto shrink-0 justify-center">
-            Search
-          </Button>
         </div>
 
         {/* Outer Leftmost Background Shape (No max-w, fluid width) */}
@@ -151,8 +153,8 @@ export default function Hero() {
           <Image
             src="/icons/left-role.png"
             alt="Left Role"
-            width={260}
-            height={330}
+            width={267}
+            height={387}
             className="w-full h-auto opacity-80"
           />
         </div>
@@ -162,8 +164,8 @@ export default function Hero() {
           <Image
             src="/icons/cilinder.png"
             alt="Right Role"
-            width={260}
-            height={320}
+            width={213}
+            height={372}
             className="w-full h-auto opacity-80"
           />
         </div>
@@ -172,16 +174,16 @@ export default function Hero() {
           Hero Graphics Showcase Section (100% Fluid - NO max-width)
           Scales proportionally on ANY screen size via viewport-width (vw) and relative percentages (%)
         */}
-        <section className="relative w-full flex justify-center items-end mt-2 sm:mt-6 pb-0 overflow-visible">
+        <section className="relative w-full flex justify-center items-end mt-auto pb-0 overflow-visible shrink-0">
           {/* Proportional Composition Container */}
-          <div className="relative w-[94vw] sm:w-[86vw] md:w-[78vw] lg:w-[70vw] xl:w-[62vw] 2xl:w-[56vw] flex justify-center items-end">
+          <div className="relative w-[94vw] sm:w-[86vw] md:w-[78vw] lg:w-[68vw] xl:w-[60vw] 2xl:w-[54vw] max-w-[1149px] flex justify-center items-end">
             {/* Half Circle Graphic (Fills the fluid container) */}
             <div className="w-full flex justify-center">
               <Image
                 src="/icons/half-circle.png"
                 alt="Half Circle"
                 width={1149}
-                height={1149}
+                height={442}
                 className="w-full h-auto object-contain select-none pointer-events-none"
                 priority
               />
@@ -192,8 +194,8 @@ export default function Hero() {
               <Image
                 src="/icons/Image.png"
                 alt="Student"
-                width={578}
-                height={541}
+                width={722}
+                height={515}
                 className="w-full h-auto object-contain pointer-events-none"
                 priority
               />
