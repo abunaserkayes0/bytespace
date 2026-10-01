@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 ByteSpace
 
-## Getting Started
+**ByteSpace** is a modern, responsive e-learning and course discovery landing page built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, and **TypeScript**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- **Dynamic Hero Section**: Fluid viewport-relative layout with 3D decorative shapes, course metrics, and a responsive search bar.
+- **Mobile Navigation Drawer**: Smooth slide-in left drawer with a light gradient background, branded header, and backdrop overlay.
+- **Course Discovery & Filters**: Filterable courses and skills categorized by development, design, business, and more.
+- **Interactive Metrics & Analytics**: Visual progress cards, revenue tracking showcases, and certificates.
+- **Trusted Partners & Testimonials**: Brand logo showcases and social proof from active learners.
+- **Fully Responsive**: Optimized for all devices from mobile viewports to ultra-wide desktop monitors.
+- **Performance Optimized**: Zero layout shifts, Next.js optimized images, and sub-second load times.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
+- **UI Library**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: Clash Display & Satoshi
+
+---
+
+## 📂 Project Structure
+
+```text
+bytespace/
+├── public/                 # Static assets, icons, and illustration graphics
+│   ├── icons/
+│   └── images/
+├── src/
+│   └── app/
+│       ├── (website)/
+│       │   └── components/ # Reusable UI components
+│       │       ├── hero.tsx
+│       │       ├── brands.tsx
+│       │       ├── course-card.tsx
+│       │       ├── features.tsx
+│       │       ├── skills.tsx
+│       │       ├── learning-paths.tsx
+│       │       ├── creator-cta.tsx
+│       │       ├── testimonials.tsx
+│       │       ├── footer.tsx
+│       │       └── ui/
+│       ├── layout.tsx      # Root layout & font configuration
+│       ├── page.tsx        # Landing page entrypoint
+│       └── globals.css     # Global styles & design system tokens
+├── package.json
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 How to Run Locally
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Follow these step-by-step instructions to get the project up and running on your local machine:
 
-## Learn More
+### 1. Prerequisites
+Make sure you have the following installed:
+- **Node.js**: `v18.18.0` or higher ([Download Node.js](https://nodejs.org/))
+- **Package Manager**: [pnpm](https://pnpm.io/) (recommended), `npm`, or `yarn`
+  ```bash
+  npm install -g pnpm
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Clone the Repository
+Clone the project to your local directory:
+```bash
+git clone https://github.com/abunaserkayes0/bytespace.git
+cd bytespace
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Install Dependencies
+Install all required project dependencies:
+```bash
+pnpm install
+```
+*(Alternatively, you can run `npm install` or `yarn install`)*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. Start the Local Development Server
+Start the Next.js development server powered by Turbopack:
+```bash
+pnpm dev
+```
+*(Or `npm run dev` / `yarn dev`)*
 
-## Deploy on Vercel
+### 5. Open in Your Browser
+Once the dev server is active, open your browser and visit:
+```text
+http://localhost:3000
+```
+The application will hot-reload automatically as you edit files in `src/app`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📦 (Optional) Running the Production Build Locally
+To test the compiled, optimized production bundle on your local machine:
+
+```bash
+# 1. Generate the production build
+pnpm build
+
+# 2. Start the local production server
+pnpm start
+```
+Then navigate to [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---|---|
+| `pnpm dev` | Starts the development server with Turbopack |
+| `pnpm build` | Creates an optimized production build |
+| `pnpm start` | Runs the built production application |
+| `pnpm lint` | Runs ESLint to check for code issues |
+| `pnpm format` | Formats code with Prettier and runs ESLint fix |
+
+---
+
+## 👤 Author
+
+- **Abunaser Kayes** - [@abunaserkayes0](https://github.com/abunaserkayes0)

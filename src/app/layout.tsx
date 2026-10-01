@@ -9,6 +9,13 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
+const clashDisplay = localFont({
+  src: "./fonts/ClashDisplay-Bold.otf",
+  variable: "--font-clash-display",
+  weight: "700",
+  style: "normal",
+});
+
 const satoshi = localFont({
   src: [
     {
@@ -76,7 +83,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${satoshi.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${satoshi.variable} ${clashDisplay.variable}`}
+    >
       <body>{children}</body>
     </html>
   );
