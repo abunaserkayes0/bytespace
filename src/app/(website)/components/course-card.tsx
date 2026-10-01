@@ -50,7 +50,9 @@ export default function CourseCard({
       <div className="flex flex-col flex-grow">
         {/* Title and Rating */}
         <div className="flex justify-between items-start mb-1 gap-2">
-          <h4 className="text-xl leading-tight font-semibold text-brand-black font-poppins line-clamp-1">{title}</h4>
+          <h4 className="text-xl leading-tight font-semibold text-brand-black font-poppins line-clamp-1">
+            {title}
+          </h4>
           <div className="flex items-center gap-1 text-brand-muted shrink-0 mt-1 text-sm font-medium">
             <span>{rating}</span>
             <Star className="w-3.5 h-3.5 fill-[#C3C6CC] text-[#C3C6CC]" />
@@ -72,16 +74,36 @@ export default function CourseCard({
           {/* Avatars */}
           <div className="flex -space-x-2">
             <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
-              <Image src="https://i.pravatar.cc/100?img=11" alt="student" fill className="object-cover" />
+              <Image
+                src="https://i.pravatar.cc/100?img=11"
+                alt="student"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
-              <Image src="https://i.pravatar.cc/100?img=12" alt="student" fill className="object-cover" />
+              <Image
+                src="https://i.pravatar.cc/100?img=12"
+                alt="student"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
-              <Image src="https://i.pravatar.cc/100?img=13" alt="student" fill className="object-cover" />
+              <Image
+                src="https://i.pravatar.cc/100?img=13"
+                alt="student"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-gray-300 overflow-hidden relative">
-              <Image src="https://i.pravatar.cc/100?img=16" alt="student" fill className="object-cover" />
+              <Image
+                src="https://i.pravatar.cc/100?img=16"
+                alt="student"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="w-7.5 h-7.5 rounded-full border-2 border-white bg-accent text-black flex items-center justify-center text-xs z-10">
               {studentsText}

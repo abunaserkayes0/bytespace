@@ -83,7 +83,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${satoshi.variable} ${clashDisplay.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${satoshi.variable} ${clashDisplay.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

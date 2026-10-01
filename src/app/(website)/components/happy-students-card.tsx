@@ -6,11 +6,14 @@ export interface HappyStudentsCardProps {
   className?: string;
 }
 
-export default function HappyStudentsCard({ className }: HappyStudentsCardProps) {
+export default function HappyStudentsCard({
+  className,
+}: HappyStudentsCardProps) {
   return (
     <div
-      className={`bg-white max-w-64.5 font-satoshi rounded-2xl p-5 shadow-xl flex flex-col ${className || ""
-        }`}
+      className={`bg-white max-w-64.5 font-satoshi rounded-2xl p-5 shadow-xl flex flex-col ${
+        className || ""
+      }`}
     >
       <div className="flex flex-col">
         <h4 className="text-balance text-left font-satoshi font-medium text-brand-dark">

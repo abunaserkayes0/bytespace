@@ -22,7 +22,7 @@ const footerLinksData = [
     { label: "Contact", href: "#" },
     { label: "Help", href: "#" },
     { label: "About", href: "#" },
-  ]
+  ],
 ];
 
 export default function Footer() {
@@ -40,11 +40,14 @@ export default function Footer() {
                 height={31}
                 className="mb-2"
               />
-              <span className="font-clash-display text-[24px] text-brand-dark">ByteSpace</span>
+              <span className="font-clash-display text-[24px] text-brand-dark">
+                ByteSpace
+              </span>
             </div>
 
             <p className="text-brand-dark text-sm mb-11.25 leading-[160%]">
-              Stay Up to date with our latest features and releases by joining our newsletter.
+              Stay Up to date with our latest features and releases by joining
+              our newsletter.
             </p>
 
             <form className="flex items-center gap-4 mb-6">
@@ -63,7 +66,8 @@ export default function Footer() {
             </form>
 
             <p className="text-xs text-brand-dark leading-[160%]">
-              By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
+              By subscribing, you agree to our Privacy Policy and consent to
+              receive updates from our company.
             </p>
           </div>
 
@@ -87,13 +91,17 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-[#EAEAEA] text-brand-dark flex flex-col md:flex-row justify-between items-center gap-6 text-sm pt-5.5">
-          <p>
-            @ 2023 ByteSpace. All rights reserved.
-          </p>
+          <p>@ 2023 ByteSpace. All rights reserved.</p>
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 font-normal">
-            <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-primary transition-colors">Terms of Service</Link>
-            <Link href="#" className="hover:text-primary transition-colors">Cookies Settings</Link>
+            <Link href="#" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="#" className="hover:text-primary transition-colors">
+              Terms of Service
+            </Link>
+            <Link href="#" className="hover:text-primary transition-colors">
+              Cookies Settings
+            </Link>
           </div>
         </div>
       </div>

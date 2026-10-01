@@ -8,16 +8,16 @@ import Testimonials from "./(website)/components/testimonials";
 import Footer from "./(website)/components/footer";
 
 export default function Page() {
-    return (
-        <div>
-            <Hero />
-            <Brands />
-            <Skills />
-            <LearningPaths />
-            <Features />
-            <CreatorCta />
-            <Testimonials />
-            <Footer />
-        </div>
-    )
+  return (
+    <div>
+      <Hero />
+      <Brands />
+      <Skills />
+      <LearningPaths />
+      <Features />
+      <CreatorCta />
+      <Testimonials />
+      <Footer />
+    </div>
+  );
 }
