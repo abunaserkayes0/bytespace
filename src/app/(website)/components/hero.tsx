@@ -68,56 +68,94 @@ export default function Hero() {
           </button>
           <button
             type="button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-1 text-white hover:text-accent transition-colors"
-            aria-label="Toggle Menu"
+            onClick={() => setMobileMenuOpen(true)}
+            className="p-1 text-white hover:text-accent transition-colors cursor-pointer"
+            aria-label="Open Menu"
           >
-            {mobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
+            <Menu className="w-6 h-6" />
           </button>
         </div>
 
-        {/* Mobile Dropdown Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-primary/95 backdrop-blur-md border-b border-white/10 px-6 py-6 flex flex-col gap-4 text-white z-50 shadow-2xl">
+        {/* Mobile Drawer Backdrop */}
+        <div
+          className={`fixed inset-0 bg-black/60 backdrop-blur-xs z-50 transition-opacity duration-300 md:hidden ${
+            mobileMenuOpen
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
+
+        {/* Mobile Drawer (Smooth Left-side Slide-in, bg-white & light gradient) */}
+        <aside
+          aria-label="Mobile Navigation Drawer"
+          className={`fixed top-0 left-0 bottom-0 w-10/12 sm:w-1/2 max-w-[85vw] h-full z-50 md:hidden bg-gradient-to-b from-white via-[#F8FAFF] to-[#EDF2FE] shadow-2xl transition-transform duration-300 ease-in-out flex flex-col p-6 font-satoshi text-brand-black ${
+            mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          {/* Drawer Header */}
+          <div className="flex items-center justify-between pb-5 border-b border-gray-100">
+            <div className="flex items-center text-[20px] font-bold gap-2">
+              <Image
+                src="/icons/logo.png"
+                alt="ByteSpace Logo"
+                width={26}
+                height={29}
+                className="w-6.5 h-auto"
+              />
+              <span className="font-clash-display text-primary text-xl">
+                ByteSpace
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(false)}
+              className="p-1.5 rounded-full hover:bg-gray-100 text-gray-500 hover:text-gray-800 transition-colors cursor-pointer"
+              aria-label="Close Menu"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Drawer Nav Links */}
+          <nav className="flex flex-col gap-1.5 py-6">
             <span
               onClick={() => setMobileMenuOpen(false)}
-              className="cursor-pointer font-semibold text-lg text-accent"
+              className="cursor-pointer font-semibold text-base text-primary px-3.5 py-2.5 rounded-xl bg-blue-50/80 transition-colors"
             >
               Home
             </span>
             <span
               onClick={() => setMobileMenuOpen(false)}
-              className="cursor-pointer hover:text-accent transition-colors text-base"
+              className="cursor-pointer font-medium text-base text-gray-700 hover:text-primary hover:bg-white/80 px-3.5 py-2.5 rounded-xl transition-colors"
             >
               Courses
             </span>
             <span
               onClick={() => setMobileMenuOpen(false)}
-              className="cursor-pointer hover:text-accent transition-colors text-base"
+              className="cursor-pointer font-medium text-base text-gray-700 hover:text-primary hover:bg-white/80 px-3.5 py-2.5 rounded-xl transition-colors"
             >
               Creators
             </span>
-            <hr className="border-white/10 my-1" />
-            <div className="flex flex-col gap-3 pt-1">
-              <span
-                onClick={() => setMobileMenuOpen(false)}
-                className="cursor-pointer hover:text-accent transition-colors text-base"
-              >
-                Sign In
-              </span>
-              <Button
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full justify-center text-center py-2.5"
-              >
-                Join Us
-              </Button>
-            </div>
+          </nav>
+
+          {/* Drawer Footer Actions */}
+          <div className="mt-auto pt-5 border-t border-gray-100 flex flex-col gap-3">
+            <span
+              onClick={() => setMobileMenuOpen(false)}
+              className="cursor-pointer font-medium text-center py-2.5 text-gray-700 hover:text-primary transition-colors text-base"
+            >
+              Sign In
+            </span>
+            <Button
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full justify-center text-center py-2.5 shadow-md shadow-primary/20"
+            >
+              Join Us
+            </Button>
           </div>
-        )}
+        </aside>
       </nav>
 
       {/* Main Content */}
