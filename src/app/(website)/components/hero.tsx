@@ -140,7 +140,7 @@ export default function Hero() {
           <ProgressCard className="absolute right-55 bottom-60" />
         </section>
 
-        <div className="absolute left-95 bottom-85 z-20">
+        <div className="absolute left-65 bottom-90 z-20">
           <Image
             src="/icons/small-role.png"
             alt="small-role"
