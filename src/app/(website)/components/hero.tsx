@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Search, ShoppingBag, Menu, X } from "lucide-react";
 import ProgressCard from "./progress-card";
 import HappyStudentsCard from "./happy-students-card";
@@ -42,12 +43,18 @@ export default function Hero() {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-6 text-base font-normal text-white/90">
-          <span className="cursor-pointer hover:text-white transition-colors">
+          <Link
+            href="/sign-in"
+            className="cursor-pointer hover:text-white transition-colors"
+          >
             Sign In
-          </span>
-          <span className="cursor-pointer hover:text-white transition-colors">
+          </Link>
+          <Link
+            href="/sign-up"
+            className="cursor-pointer hover:text-white transition-colors"
+          >
             Join Us
-          </span>
+          </Link>
           <button
             type="button"
             aria-label="Shopping Cart"
@@ -142,18 +149,22 @@ export default function Hero() {
 
           {/* Drawer Footer Actions */}
           <div className="mt-auto pt-5 border-t border-gray-100 flex flex-col gap-3">
-            <span
+            <Link
+              href="/sign-in"
               onClick={() => setMobileMenuOpen(false)}
               className="cursor-pointer font-medium text-center py-2.5 text-gray-700 hover:text-primary transition-colors text-base"
             >
               Sign In
-            </span>
-            <Button
+            </Link>
+            <Link
+              href="/sign-up"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full justify-center text-center py-2.5 shadow-md shadow-primary/20"
+              className="w-full flex"
             >
-              Join Us
-            </Button>
+              <Button className="w-full justify-center text-center py-2.5 shadow-md shadow-primary/20">
+                Join Us
+              </Button>
+            </Link>
           </div>
         </aside>
       </nav>
