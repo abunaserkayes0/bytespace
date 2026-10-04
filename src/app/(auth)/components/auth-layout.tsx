@@ -37,7 +37,7 @@ export default function AuthLayout({
           {/* Centered Left Content (Headline + Composition) */}
           <div className="flex flex-col my-auto pt-14 lg:pt-16 ">
             {/* Text Content */}
-            <div className="max-w-[440px] text-white z-30 mb-6 md:mb-8">
+            <div className="max-w-110 text-white z-30 mb-6 md:mb-8">
               <h1 className="font-poppins font-bold text-[32px] md:text-[38px] leading-[1.15] mb-3.5 tracking-tight">
                 {headline}
               </h1>
@@ -47,9 +47,9 @@ export default function AuthLayout({
             </div>
 
             {/* ===== Card Composition Area ===== */}
-            <div className="relative w-full max-w-[560px] h-[460px] md:h-[490px]">
+            <div className="relative w-full max-w-140 h-115 md:h-122.5">
               {/* Torus ring — top-left, overlapping above cards */}
-              <div className="absolute top-2 md:top-4 left-0 md:left-2 w-[130px] md:w-[150px] z-30 pointer-events-none">
+              <div className="absolute top-2 md:top-4 left-0 md:left-2 w-32.5 md:w-37.5 z-30 pointer-events-none">
                 <Image
                   src="/icons/yellow-circle.png"
                   alt="torus"
@@ -69,19 +69,8 @@ export default function AuthLayout({
                 <CourseShowcaseCard />
               </div>
 
-              {/* White squiggle — right side */}
-              {/* <div  className="absolute -right-8 bottom-14 md:bottom-0 w-[150px] md:w-[170px] z-35 pointer-events-none ">
-                <Image
-                  src="/icons/role.png"
-                  alt="squiggle"
-                  width={170}
-                  height={280}
-                  className="w-full h-auto"
-                />
-              </div> */}
-
               {/* Pyramid — bottom-left */}
-              <div className="absolute bottom-4 left-2 md:bottom-[-15] md:left-10 w-[110px] md:w-[130px] z-30 pointer-events-none">
+              <div className="absolute bottom-4 left-2 md:bottom-[-15] md:left-10 w-27.5 md:w-32.5 z-30 pointer-events-none">
                 <Image
                   src="/icons/accent-piramid.png"
                   alt="pyramid"
@@ -117,7 +106,7 @@ export default function AuthLayout({
             </span>
           </Link>
 
-          <div className="w-full max-w-[560px] bg-white rounded-[32px] p-8 sm:p-10 shadow-2xl relative z-10">
+          <div className="w-full max-w-280 h-auto lg:max-w-145 bg-white rounded-3xl p-8 sm:p-10 shadow-2xl relative z-10">
             {children}
           </div>
         </div>
