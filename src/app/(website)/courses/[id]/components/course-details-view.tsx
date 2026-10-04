@@ -23,7 +23,10 @@ export default function CourseDetailsView({
   const tabs: TabType[] = ["About", "Lesson", "Reviews"];
 
   return (
-    <div className="min-h-screen bg-white flex flex-col font-satoshi" data-course-id={courseId}>
+    <div
+      className="min-h-screen bg-white flex flex-col font-satoshi"
+      data-course-id={courseId}
+    >
       {/* 1. Hero Header */}
       <CourseDetailsHero />
 

@@ -2,12 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FolderGit2,
-  Video,
-  Award,
-  MessagesSquare,
-} from "lucide-react";
+import { FolderGit2, Video, Award, MessagesSquare } from "lucide-react";
 
 interface CourseSidebarProps {
   price?: number;

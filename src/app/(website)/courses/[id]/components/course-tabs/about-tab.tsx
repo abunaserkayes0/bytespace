@@ -44,8 +44,8 @@ export default function AboutTab() {
         <div className="flex flex-col gap-4 text-xs sm:text-sm text-brand-muted leading-relaxed">
           <p>
             Embark on an enlightening exploration into the world of digital
-            creation with our comprehensive course, &quot;Build Digital Assets: A
-            Comprehensive Guide.&quot; This transformative learning experience
+            creation with our comprehensive course, &quot;Build Digital Assets:
+            A Comprehensive Guide.&quot; This transformative learning experience
             invites you to delve deep into the intricacies of crafting impactful
             digital content. From laying the groundwork with foundational
             concepts to mastering advanced techniques, this guide is
@@ -65,9 +65,9 @@ export default function AboutTab() {
             levels of expertise, delving into the nuances of design principles
             that drive impactful creations. Uncover the secrets behind effective
             visual communication, exploring color theory, typography, and layout
-            strategies that elevate your digital assets to new heights. Engage in
-            hands-on exercises that reinforce your understanding, allowing you to
-            apply these principles in practical scenarios.
+            strategies that elevate your digital assets to new heights. Engage
+            in hands-on exercises that reinforce your understanding, allowing
+            you to apply these principles in practical scenarios.
           </p>
         </div>
       </section>

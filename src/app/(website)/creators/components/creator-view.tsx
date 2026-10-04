@@ -16,11 +16,12 @@ interface CreatorViewProps {
   creatorId?: string;
 }
 
-export default function CreatorView({
-  creatorId,
-}: CreatorViewProps = {}) {
+export default function CreatorView({ creatorId }: CreatorViewProps = {}) {
   return (
-    <div className="min-h-screen bg-white flex flex-col font-satoshi" data-creator-id={creatorId}>
+    <div
+      className="min-h-screen bg-white flex flex-col font-satoshi"
+      data-creator-id={creatorId}
+    >
       {/* 1. Creator Hero Profile */}
       <CreatorHero />
 

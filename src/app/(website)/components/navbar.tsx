@@ -17,7 +17,8 @@ export default function Navbar({ className = "" }: NavbarProps) {
 
   const isHome = pathname === "/";
   const isCourses = pathname === "/courses" || pathname.startsWith("/courses/");
-  const isCreators = pathname === "/creators" || pathname.startsWith("/creators/");
+  const isCreators =
+    pathname === "/creators" || pathname.startsWith("/creators/");
 
   return (
     <nav
