@@ -33,7 +33,7 @@ export default function CourseCard({
         <Image src={image} alt={title} fill className="object-cover" />
 
         {/* Badges on Image */}
-        <div className="absolute bottom-2.5 left-2.5 flex flex-wrap gap-1.5 sm:gap-2 pr-2 -z-10">
+        <div className="absolute bottom-2.5 left-2.5 flex flex-wrap gap-1.5 sm:gap-2 pr-2 z-10">
           <span className="bg-[#F6F6F699] backdrop-blur-sm text-brand-black text-[11px] sm:text-xs px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full font-medium">
             {lessons} Lessons
           </span>
