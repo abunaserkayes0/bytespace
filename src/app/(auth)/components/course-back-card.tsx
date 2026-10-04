@@ -5,14 +5,14 @@ export default function CourseBackCard() {
   return (
     <div className="bg-white rounded-2xl p-4 shadow-lg w-[280px] font-satoshi flex flex-col">
       {/* Thumbnail placeholder */}
-      <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-3 bg-gray-100">
+      <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-3">
         <Image
           src="/icons/image.png"
           alt="Course"
           fill
-          className="object-cover opacity-60"
+          className="object-cover"
         />
-        <div className="absolute bottom-2 left-2 z-10">
+        <div className="absolute bottom-2 left-1 z-10">
           <span className="bg-white/90 backdrop-blur-sm text-brand-black text-[10px] px-2 py-1.5 rounded-full font-semibold shadow-sm">
             17 Lessons
           </span>
@@ -30,7 +30,7 @@ export default function CourseBackCard() {
       </div>
 
       {/* Level & Avatars */}
-      <div className="flex items-center justify-between mb-3">
+      <div className="flex items-center justify mb-3">
         <div className="flex items-center gap-1.5 border border-gray-100 bg-brand-light px-2.5 py-1 rounded-full text-[10px] font-semibold text-brand-black">
           <Signal className="w-3 h-3 text-brand-black" />
           Beginner
@@ -55,9 +55,7 @@ export default function CourseBackCard() {
 
       {/* Price */}
       <div className="flex items-baseline gap-1">
-        <span className="text-primary font-bold text-lg leading-none">
-          $25
-        </span>
+        <span className="text-primary font-bold text-lg leading-none">$25</span>
         <span className="text-gray-500 text-[10px] font-medium">/lifetime</span>
       </div>
     </div>

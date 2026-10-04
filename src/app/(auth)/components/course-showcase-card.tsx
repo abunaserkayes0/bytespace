@@ -43,7 +43,7 @@ export default function CourseShowcaseCard() {
       </div>
 
       {/* Badges & Avatars */}
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-start mb-4">
         <div className="flex items-center gap-1.5 border border-gray-100 bg-brand-light px-3 py-1.5 rounded-full text-[11px] font-semibold text-brand-black">
           <Signal className="w-3.5 h-3.5 text-brand-black" />
           Beginner
