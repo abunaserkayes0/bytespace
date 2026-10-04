@@ -38,7 +38,7 @@ export default function AuthLayout({
           <div className="flex flex-col my-auto pt-14 lg:pt-16 ">
             {/* Text Content */}
             <div className="max-w-110 text-white z-30 mb-6 md:mb-8">
-              <h1 className="font-poppins font-bold text-[32px] md:text-[38px] leading-[1.15] mb-3.5 tracking-tight">
+              <h1 className="font-poppins font-semibold text-lg md:text-xl leading-[1.15] mb-3.5 tracking-tight">
                 {headline}
               </h1>
               <p className="font-satoshi text-[14px] md:text-[15px] text-white/80 leading-[1.65] font-light">
