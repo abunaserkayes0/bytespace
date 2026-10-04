@@ -1,7 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Signal, Star } from "lucide-react";
 
 export interface CourseCardProps {
+  id?: number | string;
+  href?: string;
   image: string;
   title: string;
   author: string;
@@ -15,6 +18,7 @@ export interface CourseCardProps {
 }
 
 export default function CourseCard({
+  href = "/courses/build-digital-asset",
   image,
   title,
   author,
@@ -27,10 +31,18 @@ export default function CourseCard({
   studentsText,
 }: CourseCardProps) {
   return (
-    <div className="border border-gray-200 w-full max-w-md rounded-3xl p-4 bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col font-satoshi">
+    <div className="border border-gray-200 w-full max-w-md rounded-3xl p-4 bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col font-satoshi group">
       {/* Image Container */}
-      <div className="relative w-full aspect-4/2.5 rounded-2xl overflow-hidden mb-4 sm:mb-5">
-        <Image src={image} alt={title} fill className="object-cover" />
+      <Link
+        href={href}
+        className="relative w-full aspect-4/2.5 rounded-2xl overflow-hidden mb-4 sm:mb-5 block cursor-pointer"
+      >
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover group-hover:scale-103 transition-transform duration-300"
+        />
 
         {/* Badges on Image */}
         <div className="absolute bottom-2.5 left-2.5 flex flex-wrap gap-1.5 sm:gap-2 pr-2 z-10">
@@ -44,15 +56,17 @@ export default function CourseCard({
             {comments} Comments
           </span>
         </div>
-      </div>
+      </Link>
 
       {/* Content */}
       <div className="flex flex-col flex-grow">
         {/* Title and Rating */}
         <div className="flex justify-between items-start mb-1 gap-2">
-          <h4 className="text-lg sm:text-xl leading-tight font-semibold text-brand-black font-poppins line-clamp-1">
-            {title}
-          </h4>
+          <Link href={href} className="hover:text-primary transition-colors">
+            <h4 className="text-lg sm:text-xl leading-tight font-semibold text-brand-black font-poppins line-clamp-1">
+              {title}
+            </h4>
+          </Link>
           <div className="flex items-center gap-1 text-brand-muted shrink-0 mt-0.5 text-xs sm:text-sm font-medium">
             <span>{rating}</span>
             <Star className="w-3.5 h-3.5 fill-[#C3C6CC] text-[#C3C6CC]" />
@@ -61,7 +75,13 @@ export default function CourseCard({
 
         {/* Author */}
         <div className="text-xs sm:text-sm text-brand-muted">
-          by <span className="text-primary font-medium">{author}</span>
+          by{" "}
+          <Link
+            href="/creators/purepearl-studio"
+            className="text-primary font-medium hover:underline"
+          >
+            {author}
+          </Link>
         </div>
 
         {/* Level and Avatars */}

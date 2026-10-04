@@ -17,6 +17,7 @@ export default function Navbar({ className = "" }: NavbarProps) {
 
   const isHome = pathname === "/";
   const isCourses = pathname === "/courses" || pathname.startsWith("/courses/");
+  const isCreators = pathname === "/creators" || pathname.startsWith("/creators/");
 
   return (
     <nav
@@ -55,8 +56,10 @@ export default function Navbar({ className = "" }: NavbarProps) {
           Courses
         </Link>
         <Link
-          href="/#creators"
-          className="cursor-pointer hover:text-white transition-colors text-white/80"
+          href="/creators"
+          className={`cursor-pointer hover:text-white transition-colors ${
+            isCreators ? "text-white font-semibold" : "text-white/80"
+          }`}
         >
           Creators
         </Link>
@@ -118,7 +121,7 @@ export default function Navbar({ className = "" }: NavbarProps) {
       {/* Mobile Drawer */}
       <aside
         aria-label="Mobile Navigation Drawer"
-        className={`fixed top-0 left-0 bottom-0 w-10/12 sm:w-1/2 max-w-[85vw] h-full z-50 md:hidden bg-gradient-to-b from-white via-[#F8FAFF] to-[#EDF2FE] shadow-2xl transition-transform duration-300 ease-in-out flex flex-col p-6 font-satoshi text-brand-black ${
+        className={`fixed top-0 left-0 bottom-0 w-10/12 sm:w-1/2 max-w-[85vw] h-full z-50 md:hidden bg-linear-to-b from-white via-[#F8FAFF] to-[#EDF2FE] shadow-2xl transition-transform duration-300 ease-in-out flex flex-col p-6 font-satoshi text-brand-black ${
           mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -175,9 +178,13 @@ export default function Navbar({ className = "" }: NavbarProps) {
             Courses
           </Link>
           <Link
-            href="/#creators"
+            href="/creators"
             onClick={() => setMobileMenuOpen(false)}
-            className="cursor-pointer font-medium text-base text-gray-700 hover:text-primary hover:bg-white/80 px-3.5 py-2.5 rounded-xl transition-colors"
+            className={`cursor-pointer font-medium text-base px-3.5 py-2.5 rounded-xl transition-colors ${
+              isCreators
+                ? "font-semibold text-primary bg-blue-50/80"
+                : "text-gray-700 hover:text-primary hover:bg-white/80"
+            }`}
           >
             Creators
           </Link>
