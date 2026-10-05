@@ -145,7 +145,7 @@ export default function Features() {
               </div>
               <div className="absolute -top-10 left-15 z-0">
                 <Image
-                  src="/icons/image.png"
+                  src="/images/image.png"
                   width="435"
                   height="596"
                   alt="certificate image"

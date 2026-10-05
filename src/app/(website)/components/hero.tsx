@@ -97,7 +97,7 @@ export default function Hero() {
           />
           <div className="absolute left-1/2 bottom-0 z-10 -translate-x-1/2">
             <Image
-              src="/icons/Image.png"
+              src="/images/Image.png"
               alt="image"
               width={578}
               height={541}
