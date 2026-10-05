@@ -7,25 +7,23 @@ export interface ProgressCardProps {
 }
 
 export default function ProgressCard({
-  title = "Learning Progress",
+  title = "Learning Process",
   percentage = 55,
   className,
 }: ProgressCardProps) {
   return (
     <div
-      className={`bg-white font-satoshi rounded-2xl p-4 sm:p-5 shadow-xl flex flex-col min-w-[180px] ${
-        className || ""
-      }`}
+      className={`bg-white font-satoshi rounded-xl p-4 shadow-lg flex flex-col ${className || ""}`}
     >
-      <h4 className="text-xs sm:text-sm text-left font-medium font-satoshi text-brand-dark">
+      <h4 className="text-sm text-left font-medium font-satoshi text-brand-dark">
         {title}
       </h4>
-      <h2 className="font-poppins text-left text-3xl sm:text-[40px] lg:text-[48px] font-semibold text-brand-dark my-1 sm:my-2 leading-none">
+      <h2 className="font-poppins text-left text-[48px] font-semibold text-brand-dark">
         {percentage}%
       </h2>
-      <div className="w-full min-w-[140px] h-2 bg-gray-100 rounded-full overflow-hidden mt-1">
+      <div className="w-50 h-2 bg-gray-200 rounded-full overflow-hidden">
         <div
-          className="h-full bg-accent rounded-full transition-all duration-500"
+          className="h-full bg-accent rounded-full"
           style={{ width: `${percentage}%` }}
         ></div>
       </div>

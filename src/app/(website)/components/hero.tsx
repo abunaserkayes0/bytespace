@@ -85,7 +85,7 @@ export default function Hero() {
             {/* Student Center Image (Occupies center 54% of fluid container, leaving 23% on each side) */}
             <div className="absolute left-1/2 bottom-0 z-20 -translate-x-1/2 w-[54%] flex justify-center">
               <Image
-                src="/icons/Image.png"
+                src="/images/Image.png"
                 alt="Student"
                 width={722}
                 height={515}
