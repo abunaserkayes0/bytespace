@@ -165,15 +165,14 @@ export default function Skills() {
   ];
 
   return (
-    <section className="bg-white py-12 sm:py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center text-brand-black mb-8 sm:mb-12">
-          <h3 className="font-poppins font-semibold text-2xl sm:text-3xl md:text-[44px] leading-[120%] tracking-[-1%] mb-3 sm:mb-4">
-            Discover Your Passion, <br className="hidden sm:block" /> Build Your
+    <section className="bg-white py-18">
+      <section>
+        <div className="max-w-229.25 mx-auto text-center text-brand-black">
+          <h3 className="font-poppins font-semibold text-[44px] leading-[120%] tracking-[-1%] mb-4">
+            Discover Your Passion, <br className="hidden md:block" /> Build Your
             Skills
           </h3>
-          <p className="text-sm sm:text-base md:text-lg font-satoshi text-brand-muted leading-relaxed px-2">
+          <p className="text-lg font-satoshi text-brand-muted mb-10.5">
             At Bytespace Courses, we bring you closer to life-changing
             knowledge. Explore a variety of courses across different fields,
             from technology to the arts, and make a difference in your career
@@ -181,32 +180,55 @@ export default function Skills() {
           </p>
         </div>
 
-        {/* Skill Filter Buttons */}
-        <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 max-w-5xl mx-auto mb-10 sm:mb-16">
-          {skills.map((skill, index) => (
-            <Button
-              key={skill.id}
-              className={`capitalize text-xs sm:text-sm md:text-base py-2 px-3 sm:py-2.5 sm:px-4 rounded-full transition-colors duration-300 ${
-                index === 0
-                  ? "bg-accent text-black font-medium hover:bg-accent/90"
-                  : "bg-brand-light text-brand-dark hover:bg-accent hover:text-black"
-              }`}
-            >
-              {skill.name}
-            </Button>
-          ))}
-          <button className="capitalize text-sm sm:text-base font-satoshi font-semibold text-primary hover:underline transition-all duration-300 px-3 py-2 cursor-pointer">
-            + More
-          </button>
-        </div>
+        <div className="flex flex-col items-center gap-4 font-satoshi leading-[120%] text-base w-full mb-8 px-4">
+          {/* First line */}
+          <div className="flex flex-wrap justify-center gap-3 w-full max-w-267">
+            {skills.slice(0, 8).map((skill, index) => (
+              <Button
+                key={skill.id}
+                className={`capitalize hover:bg-accent hover:text-black transition-colors duration-300 ${index === 0 ? "bg-accent text-black" : "bg-brand-light text-brand-dark"}`}
+              >
+                {skill.name}
+              </Button>
+            ))}
+          </div>
 
-        {/* Courses Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
+          {/* Second line */}
+          <div className="flex flex-wrap justify-center gap-3 w-full max-w-238">
+            {skills.slice(8, 14).map((skill) => (
+              <Button
+                key={skill.id}
+                className="capitalize bg-brand-light text-brand-dark hover:bg-accent hover:text-black transition-colors duration-300"
+              >
+                {skill.name}
+              </Button>
+            ))}
+          </div>
+
+          {/* Third line */}
+          <div className="flex flex-wrap justify-center items-center gap-3 w-full max-w-155.5">
+            {skills.slice(14, 18).map((skill) => (
+              <Button
+                key={skill.id}
+                className="capitalize bg-brand-light text-brand-dark hover:bg-accent hover:text-black transition-colors duration-300"
+              >
+                {skill.name}
+              </Button>
+            ))}
+            <button className="capitalize text-base font-satoshi fon-semibold text-primary hover:underline transition-all duration-300">
+              + More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-299.75 mx-auto mt-16 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course) => (
             <CourseCard key={course.id} {...course} />
           ))}
         </div>
-      </div>
+      </section>
     </section>
   );
 }

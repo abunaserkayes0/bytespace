@@ -73,12 +73,14 @@ export default function Features() {
               </div>
             </aside>
 
+
+
             <aside className="relative z-10 flex justify-center w-full">
               <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-md xl:max-w-lg">
                 {/* Main Course Card */}
-                <div className="relative w-full">
+                <div className="relative z-10 w-full">
                   <CourseCard
-                    image="https://i.pravatar.cc/500?img=10"
+                    image="https://i.pravatar.cc/500?img=11"
                     title="Web Development"
                     author="Abunaser Kayes"
                     lessons={12}
@@ -92,7 +94,7 @@ export default function Features() {
                 </div>
 
                 {/* Decorative Image Behind Card */}
-                <div className="hidden sm:block absolute top-15 -right-6 lg:right-[-40%] z-10 w-72 lg:w-144.25 pointer-events-none opacity-85">
+                <div className="hidden sm:block absolute top-15 -right-6 lg:right-[-40%] z-20 w-72 lg:w-144.25 pointer-events-none opacity-85">
                   <Image
                     src="/images/Image.png"
                     width={577}
@@ -103,12 +105,12 @@ export default function Features() {
                 </div>
 
                 {/* Floating ProgressCard */}
-                <div className="hidden sm:block absolute top-[40%] sm:-right-25 z-20 scale-85 sm:scale-95 lg:scale-100 origin-bottom-right shadow-2xl">
+                <div className="hidden sm:block absolute top-[40%] sm:-right-25 z-30 scale-85 sm:scale-95 lg:scale-100 origin-bottom-right shadow-2xl">
                   <ProgressCard />
                 </div>
 
                 {/* Floating Role Shape */}
-                <div className="hidden lg:block absolute top-25 right-[-27%] z-30 w-32 pointer-events-none select-none">
+                <div className="hidden lg:block absolute top-25 right-[-27%] z-40 w-32 pointer-events-none select-none">
                   <Image
                     src="/icons/straight-role.png"
                     width={215}
@@ -119,6 +121,8 @@ export default function Features() {
                 </div>
               </div>
             </aside>
+
+
           </section>
 
           {/* Manage Courses Section */}
@@ -179,7 +183,7 @@ export default function Features() {
                 </div>
 
                 {/* Happy Students Floating Badge */}
-                <div className="hidden sm:block absolute right-0 sm:right-4 lg:left-1/2 bottom-4 sm:bottom-12 lg:top-56 z-30 shadow-2xl scale-85 sm:scale-95 lg:scale-100 origin-bottom-right lg:origin-center">
+                <div className="hidden sm:block absolute right-0 sm:right-4 lg:left-1/2 bottom-4 sm:bottom-12 lg:top-56 z-30 scale-85 sm:scale-95 lg:scale-100 origin-bottom-right lg:origin-center">
                   <HappyStudentsCard />
                 </div>
               </div>

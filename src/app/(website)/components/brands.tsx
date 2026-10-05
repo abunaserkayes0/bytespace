@@ -10,14 +10,11 @@ export default function Brands() {
   ];
 
   return (
-    <section className="bg-brand-light py-12 sm:py-16 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-center sm:justify-around lg:justify-between items-center gap-8 sm:gap-12 lg:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
+    <section className="bg-brand-light py-20">
+      <div className="container mx-auto">
+        <div className="flex flex-wrap justify-center md:justify-between items-center gap-18 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
           {brands.map((brand) => (
-            <div
-              key={brand.id}
-              className="relative w-32 sm:w-36 md:w-42 h-8 sm:h-9 md:h-10.25"
-            >
+            <div key={brand.id} className="relative w-42 h-10.25">
               <Image
                 src={brand.src}
                 alt={`${brand.name} logo`}
