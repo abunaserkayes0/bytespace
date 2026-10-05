@@ -73,8 +73,6 @@ export default function Features() {
               </div>
             </aside>
 
-
-
             <aside className="relative z-10 flex justify-center w-full">
               <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-md xl:max-w-lg">
                 {/* Main Course Card */}
@@ -121,8 +119,6 @@ export default function Features() {
                 </div>
               </div>
             </aside>
-
-
           </section>
 
           {/* Manage Courses Section */}
