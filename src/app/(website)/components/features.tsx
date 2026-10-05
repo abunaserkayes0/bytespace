@@ -73,12 +73,14 @@ export default function Features() {
               </div>
             </aside>
 
+
+
             <aside className="relative z-10 flex justify-center w-full">
               <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-md xl:max-w-lg">
                 {/* Main Course Card */}
-                <div className="relative w-full">
+                <div className="relative z-10 w-full">
                   <CourseCard
-                    image="https://i.pravatar.cc/500?img=10"
+                    image="https://i.pravatar.cc/500?img=11"
                     title="Web Development"
                     author="Abunaser Kayes"
                     lessons={12}
@@ -119,6 +121,8 @@ export default function Features() {
                 </div>
               </div>
             </aside>
+
+
           </section>
 
           {/* Manage Courses Section */}
